@@ -9,18 +9,18 @@
  */
 avl_t *array_to_avl(int *array, size_t size)
 {
-    avl_t *tree;
-    size_t i;
+	avl_t *tree;
+	size_t i;
 
-    tree = NULL;
+	tree = NULL;
 
-    for (i = 0; i < size; i++)
-    {
-        avl_insert(&tree, array[i]);
-    }
+	for (i = 0; i < size; i++)
+	{
+		avl_insert(&tree, array[i]);
+	}
 
-    if (i == size)
-        return (tree);
+	if (i == size)
+		return (tree);
 
-    return (NULL);
+	return (NULL);
 }
