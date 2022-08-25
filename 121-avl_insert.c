@@ -26,7 +26,7 @@ void check_balance(avl_t **node, int value)
 	}
 
 	if (balance > 1 && value > (*node)->left->n)
- 	{
+	{
 		(*node)->left = binary_tree_rotate_left((*node)->left);
 		*node = binary_tree_rotate_right(*node);
 		return;
@@ -97,7 +97,7 @@ avl_t *avl_insert(avl_t **tree, int value)
 {
 	avl_t *node;
 
- 	if (*tree == NULL)
+	if (*tree == NULL)
 	{
 		*tree = binary_tree_node(NULL, value);
 		return (*tree);
